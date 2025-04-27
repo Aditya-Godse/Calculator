@@ -9,7 +9,7 @@ function calculate() {
         display.value = '';
     }else{
     try{
-    display.value = eval(display.value);
+    display.value = eval(display.value).toFixed(2);
     }catch(error){
         display.value = "Error";
         setTimeout(function () {
